@@ -36,7 +36,8 @@
   (def hospital (h.logic/chega-em-pausado hospital :espera pessoa))
   (println "\r\nApós inserir" pessoa "\r\n"))
 
-
+; .Thread -> inicia uma nova instância da "Thread" no Java
+; .start -> chama a função  "start"
 (defn simula-um-dia-em-paralelo
   []
   (pprint hospital)
